@@ -3,8 +3,6 @@
 
 int main(void) {
 	
-	struct Node *root = NULL;
-	
 	printf("Total number of possible Binary Search Trees with given key: %d", numOfBST(5));
 	
 	return 0;
@@ -29,6 +27,8 @@ struct Node *newNode(int data) {
 	return temp;
 	
 }
+
+struct Node *root = NULL;
 
 int fact(int num) {
 	
