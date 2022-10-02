@@ -1,15 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void) {
-	
-	printf("Total number of possible Binary Search Trees with given key: %d", numOfBST(5));
-	
-	return 0;
-	
-}
-
-struct Node {
+typedef struct Node {
 	
 	int nodeData;
 	struct Node *left;
@@ -56,5 +48,13 @@ int numOfBST(int key) {
 	
 	int catalanNumber = fact(2 * key)/(fact(key + 1) * fact(key));
 	return catalanNumber;
+	
+}
+
+int main(void) {
+	
+	printf("Total number of possible Binary Search Trees with given key: %d", numOfBST(5));
+	
+	return 0;
 	
 }
